@@ -6,7 +6,7 @@ Github Repository: https://github.com/fernando-almeida-r/project_week4/tree/main
 
 Shiny Application: https://n80gm9-fernando-rocha.shinyapps.io/Week4Project/
 
-Ioslide Presentation: 
+Ioslide Presentation: https://rpubs.com/FernandoARocha/week4_-_project_presentatiion
 
 Description
 Using the data provided by Motor Trend Cars to evaluate the effect of fuel consumption based on engine power and number of gears and cylinders of the car.
