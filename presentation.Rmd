@@ -1,0 +1,54 @@
+---
+title: 'Course Project: Shiny Application and Reproducible Pitch'
+author: "Fernando Rocha"
+date: "2024-03-23"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## About the Course Project
+
+This is a deliverable for the course Developing Data Products as part of the Coursera Data Science Specialization.
+
+Instructions:
+
+1. Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
+2. Deploy the application on Rstudio's shiny server
+3. Share the application link by pasting it into the provided text box
+4. Share your server.R and ui.R code on github
+
+## How to use the application
+
+Using the data provided by Motor Trend Cars dataset, we fit a linear model evaluate the effect of fuel consumption based on engine power and number of gears and cylinders of the car.
+
+The application is running on (https://n80gm9-fernando-rocha.shinyapps.io/Week4Project/)
+
+ui.R, and Server.R Code in my github repository (https://github.com/fernando-almeida-r/project_week4)
+
+## Motor Trend Cars Dataset
+
+The data used in the app comes from the Motor Trend Cars dataset. 
+
+```{r summary}
+data(mtcars)
+summary(mtcars)
+```
+
+## Plot
+In the scatterplot below are represented the data used for the linear model.
+
+```{r plot}
+
+data(mtcars)
+
+plot(jitter(mtcars$mpg) ~ mtcars$hp,
+     xlab="Engine Power (HP)",
+     ylab="Miles per galon (MPG)",
+     main="Effect of Fuel Consumption based on Engine Power",
+     pch=19,
+     frame.plot=FALSE)
+
+```
